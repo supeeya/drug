@@ -305,7 +305,7 @@ async def upload_file(request: Request, file: UploadFile = File(...)):
 
         # ส่งข้อมูลไปยังเทมเพลต
         return templates.TemplateResponse(
-            "results.html",
+            "result.html",
             {
                 "request": request,
                 "uploaded_image_base64": uploaded_image_base64,
